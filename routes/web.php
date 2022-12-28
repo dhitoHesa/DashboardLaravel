@@ -22,3 +22,4 @@ Route::get('profiles', [App\Http\Controllers\Profiles::class, 'list']);
 Route::get('/', [App\Http\Controllers\Dashboard::class, 'list']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
