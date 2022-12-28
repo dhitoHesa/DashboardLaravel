@@ -13,10 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
-Route::get('dashboard', [App\Http\Controllers\Profiles::class, 'list']);
+Route::get('profiles', [App\Http\Controllers\Profiles::class, 'list']);
+
+Route::get('/', [App\Http\Controllers\Dashboard::class, 'list']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -5,13 +5,15 @@
 </head>
 <body class="bg-danger-subtle">
     <div class="container">
-        <ul>
-        @foreach($data as $data)
-            <li>
-                <p class="m-1"><b>Nama:</b> {{$data['nama']}}</p>
-                <p><b>Sekolah:</b> {{$data['school']}}</p>
-            </li>
-        @endforeach
-        </ul>
+        <h2>
+            {{$item['head']}}
+        </h2>
+        <p>
+            {{$item['text']}}
+        </p>
+        <a class="btn btn-primary" href="/profiles" role="button">
+            Profiles
+        </a>
+
     </div>
 </body>

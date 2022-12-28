@@ -13,6 +13,6 @@ class Profiles extends Controller
     function list(){
         $data= Http::get('http://localhost:5500')->JSON();
 
-        return view('dashboard',['data'=>$data]);
+        return view('profiles',['data'=>$data]);
     }    
 }
